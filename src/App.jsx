@@ -7,7 +7,7 @@ function App() {
   return (
       <div className='Default'>
 
-        <ListadoDeOrdenes/>
+        <Formulario/>
 
         </div>
   )
