@@ -21,6 +21,9 @@ function ListadoDeOrdenes() {
     function Agregar() {
         setID([...ID, num2])
     }
+    function Modificar() {
+        setID([...ID, num2])
+    }
 
     function modificar(id){
         console.log(id)
@@ -30,6 +33,7 @@ function ListadoDeOrdenes() {
         <Fragment>
             <h2>----- Listado de Ordenes -----</h2>
             <button onClick={Agregar}>Agregar </button>
+            <button onClick={Modificar}>Modificar </button>
             <table className="table table-hover">
                 <thead>
                     <tr>
@@ -45,10 +49,10 @@ function ListadoDeOrdenes() {
                         Lista.map((item, index) =>
                             <tr key={index} onClick={()=>modificar(item.ID)}>
                                 <td>{item.ID}</td>
-                                <td>{item.Fecha}</td>
-                                <td>{item.Ciudad}</td>
-                                <td>{item.Dentrega}</td>
-                                <td>{item.Estado}</td>
+                                <td>{item.fecha}</td>
+                                <td>{item.ciudad}</td>
+                                <td>{item.dentrega}</td>
+                                <td>{item.estado}</td>
                             </tr>
                         )}
 
